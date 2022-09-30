@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" />
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>My First Javascript</h1>
+
+          <button onclick="checkDate()">
+            Click me to display Date and time
+          </button>
+
+          <!-- for css -->
+          <button
+            onclick="changeBGcolor()"
+          >
+            Click me to change BG-color
+          </button>
+
+          <!-- for alert -->
+          <button
+            onclick="myAlert()"
+          >
+            Click me to alert
+          </button>
+
+          <p id="demo">Sample</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5 mt-4 ms-3">
+            <table class="table shadow">
+                <tr>
+                    <thead>
+                        <th>#</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Action</th>
+                    </thead>
+                </tr>
+                <tbody>
+                    <tr id="sample">
+                        <td>1</td>
+                        <td>Juan</td>
+                        <td>Dela Cruz</td>
+                        <td>
+                            <button onclick="del()">✖</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+    <script src="myJS.js"></script>
+  </body>
+</html>
