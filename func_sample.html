@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Click the button to call a function</h1>
+        <form>
+            <input name="num1" placeholder="Enter A Number">
+            <input name="num2" placeholder="Enter A Number">
+            <button onclick="add(num1.value, num2.value)">ADD</button>
+        </form>
+    </div>
+    <script>
+       
+        function add(num1, num2) {
+            if(num1 == "" || num2 == ""){
+                return;
+            }
+            let sum;
+            sum = parseInt(num1) + parseInt(num2);
+            alert("The sum is: " + sum);
+        }
+
+        let a = 1;
+
+        let fruits = ["banana", "apple", "kiwi", "langka", "grapes", "mango"];
+
+        document.write("<div class = 'container'>")
+            // document.write("<strong>" + fruits[1] + "</strong>" + "<br>");
+            // document.write(fruits[0] + "<br>");
+
+            //for-loop
+            // for(init; condition; increment){
+            //     //execution/codes
+            // }
+            for(let frt = fruits.length - 1; frt >= 0; frt--){
+               
+                // if(frt == 0){
+                //     //document.write(fruits.length + "<br>")
+                //     //continue;
+                // }
+             
+                document.write(fruits[frt] + "<br>");
+                
+
+            }
+
+            document.write("<hr>")
+            //switch-case coditional statement
+            // let inputUser = prompt("Enter a letter", "Enter . . .")
+            // switch(inputUser.toLowerCase()){
+            //     case "a":
+            //     case "e":
+            //     case "i":
+            //     case "o":
+            //     case "u":
+            //         //codes
+            //         document.write(inputUser + " is a vowel");
+            //         break;
+            //     default:
+            //         //codes
+            //         document.write(inputUser + " is a consonant");
+            //         break;
+            // }
+
+
+
+
+
+
+
+
+        document.write("</div>")
+    </script>
+</body>
+
+</html>

@@ -80,5 +80,7 @@ if(b%2 == 0){
 // < Less than  
 // >= Greater than or equal to  
 // <= Less than or equal to  
+// || OR
+// && AND
 // ? Ternary operator
 // condition ? exprIfTrue : exprIfFalse
